@@ -9,6 +9,8 @@ fn App() -> impl IntoView {
     let (count, set_count) = create_signal(0);
 
     let (x, set_x) = create_signal(0);
+
+    let double_count = move || count() *2;
     view! {
         <button
             on:click= move |_| {
@@ -33,7 +35,9 @@ fn App() -> impl IntoView {
             "Click to move"
        </button>
 
-       <progress max="50" value=count />
+       <progress max="50" value=double_count />
+       <p>"Double Count: " {double_count}
+       </p>
 
     }
 }
