@@ -38,6 +38,17 @@ fn App() -> impl IntoView {
        <progress max="50" value=double_count />
        <p>"Double Count: " {double_count}
        </p>
+       <ProgressBar max=50 progress=count />
 
+    }
+}
+
+#[component]
+fn ProgressBar(
+    #[prop(optional)] 
+    max: u16,
+    progress: ReadSignal<i32>) -> impl IntoView {
+    view! {
+        <progress max=max value=progress />
     }
 }
