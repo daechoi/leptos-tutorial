@@ -19,7 +19,7 @@ fn App() -> impl IntoView {
             class:red=move||count()%2 == 1
         >
             "Click me: "
-            {count}
+            {move||count()}
         </button>
         <button 
             on:click= {move |_| {
@@ -38,14 +38,14 @@ fn App() -> impl IntoView {
        <progress max="50" value=double_count />
        <p>"Double Count: " {double_count}
        </p>
-       <ProgressBar max=50 progress=count />
+       <ProgressBar progress=count />
 
     }
 }
 
 #[component]
 fn ProgressBar(
-    #[prop(optional)] 
+    #[prop(default = 100)] 
     max: u16,
     progress: ReadSignal<i32>) -> impl IntoView {
     view! {

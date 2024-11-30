@@ -717,11 +717,11 @@ function __wbg_get_imports() {
         const ret = makeMutClosure(arg0, arg1, 42, __wbg_adapter_30);
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper1861 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper1862 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 174, __wbg_adapter_33);
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper7087 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper7088 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 226, __wbg_adapter_36);
         return ret;
     };
