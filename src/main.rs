@@ -33,5 +33,7 @@ fn App() -> impl IntoView {
             "Click to move"
        </button>
 
+       <progress max="50" value=count />
+
     }
 }
